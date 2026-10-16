@@ -1,0 +1,15 @@
+{
+  "name": "pulse",
+  "version": "1.0.0",
+  "description": "Self-hosted uptime & incident monitoring. Zero dependencies.",
+  "type": "module",
+  "engines": { "node": ">=22.5" },
+  "bin": { "pulse": "bin/pulse.js" },
+  "scripts": {
+    "start": "node bin/pulse.js serve",
+    "dev": "node --watch bin/pulse.js serve",
+    "test": "node --test --test-force-exit test/*.test.js",
+    "seed": "node bin/pulse.js seed"
+  },
+  "license": "MIT"
+}
