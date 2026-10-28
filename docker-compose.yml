@@ -1,0 +1,10 @@
+services:
+  pulse:
+    build: .
+    ports: ["4400:4400"]
+    volumes: ["pulse-data:/data"]
+    environment:
+      PULSE_BASE_URL: http://localhost:4400
+    restart: unless-stopped
+volumes:
+  pulse-data:
